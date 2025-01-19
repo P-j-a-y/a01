@@ -1,0 +1,76 @@
+"S.No.	Statement	Predicate",,
+"1	If you're honest"," tell the truth.	","honest?(you) IMPL tell?(you,truth)"
+"2	If my dog hears a noise"," he always barks.	","FA(X) noise?(X) ? hears?(my_dog,X) IMPL barks?(my_dog)"
+"3	If you're late"," apologize.	",late?(you) IMPL apologize?(you)
+"4	If you break something"," please tell me.	","FA(X) break?(you,X) IMPL tell?(you,me,break(X))"
+"5	If you find my keys"," let me know.	","FA(X) find?(you,X) ? keys?(X) IMPL let_know?(you,me)"
+"6	If the door is locked"," use your key.	","locked?(door) IMPL use?(you,key)"
+"7	If you study hard"," you'll pass the test.	","FA(X) study_hard?(you,X) IMPL pass?(you,test)"
+"8	If you're respectful"," listen well.	",respectful?(you) IMPL listen?(you)
+"9	If you're bored"," read a book.	","bored?(you) IMPL read?(you,book)"
+"10	If you hear thunder"," come inside.	","FA(X) thunder?(X) AND hear?(you,X) IMPL come_inside?(you) "
+"11	If you're excited"," share the news.	","excited?(you) IMPL share?(you,news)"
+"12	If the mirror fogs"," wipe it clean.	","fogs?(mirror) IMPL wipe?(me,mirror,clean)"
+"13	If you're energetic"," exercise.	",energetic?(you) IMPL exercise?(you) 
+"14	If you're resourceful"," find solutions.	","resourceful?(you) IMPL find?(you,solutions)"
+"15	If the leaves fall"," rake them.	","FA(X) fall?(leaves,X) IMPL rake?(me,leaves)"
+"16	If you're careful"," avoid mistakes.	","FA(X) careful?(X) IMPL avoid?(X,mistakes)"
+"17	If the paper tears"," tape it.	",FA(X) tears?(X) IMPL tape?(X)
+"18	If you mix blue and yellow"," you get green.	"," FA(X) red?(X) AND FA(Y) blue?(Y) IMPL green?(mix(X,Y))"
+"19	If the computer crashes"," restart it.	",crashes?(computer) IMPL restart?(computer)
+"20	If the garden grows"," share produce.	",grows?(garden) IMPL share?(produce)
+"21	If the sun sets"," the temperature drops.	", sets?(sun) IMPL drops?(temperature)
+"22	If the window breaks"," cover it.	",breaks?(window) IMPL cover?(window)
+"23	If the battery dies"," charge your phone.	"," dies?(battery) IMPL charge?(you,phone)"
+"24	If the light is red"," stop driving.	",FA(X) red?(light(X)) IMPL stop?(driving)
+"25	If you're proud"," celebrate.	",proud?(you) IMPL celebrate?(you)
+"26	If the clock stops"," change batteries.	",stops?(clock) IMPL change?(batteries) 
+"27	If you're cold"," put on a sweater.	"," cold?(you) ? put_on?(you, sweater)"
+"28	If the music is too loud"," turn it down.	",loud?(music) ? turn_down?(music)
+"29	If the flower wilts"," water it.	",wilts?(flower) ? water?(flower)
+"30	If I had wings"," I would fly.	",has_wings?(me) ? fly?(me)
+"31	If you're sincere"," mean what you say.	","sincere?(you) ? mean?(you,say(you)) "
+"32	If the fire alarm sounds"," evacuate.	",sounds?(fire_alarm) IMPL evacuate?(everyone) 
+"33	If you're happy"," smile.	",happy?(you) IMPL smile?(you)
+"34	If the sweater shrinks"," donate it.	",shrinks?(sweater) IMPL donate?(sweater)
+"35	If it snows"," schools might close.	",snows?() IMPL might_close?(schools) 
+"36	If the sink leaks"," call a plumber.	","leaks?(sink) IMPL call?(someone,plumber) "
+"37	If you're confused"," ask questions.	","confused?(you) IMPL ask?(you,questions)"
+"38	If the paint is wet"," don't touch it.	","wet?(paint) IMPL ¬touch?(you, paint)"
+"39	If you're wrong"," admit it.	",wrong?(you) IMPL admit?(you)
+"40	If the rain stops"," go outside.	"," FA(X) stops?(rain, X) IMPL go?(you, outside)"
+"41	If the fruit ripens"," eat it soon.	","? X fruit?(X) ? ripens?(X) IMPL soon?(eat?(you,X))"
+"42	If we work together"," we can finish faster.	",work_together?(we) IMPL faster?(finish(we))
+"43	If you're adventurous"," try new things.	","adventurous?(you) IMPL try?(you, new_things)"
+"44	If the power goes out"," use candles.	","power_out?(power) IMPL use?(you,candies)"
+"45	If the milk smells bad"," throw it out.	",bad?(smell(milk)) IMPL throw_out?(milk)
+"46	If you're responsible"," fulfill duties.	",responsible?(you) IMPL fulfill_duties?(you)
+"47	If you're productive"," manage time.	","productive?(you) IMPL manage?(you,time)"
+"48	If the snow falls"," shovel the path.	",FA(X) snow?(X) AND falls?(X) IMPL shovel?(path)
+"49	If the dish breaks"," sweep it up.	","FA(X) dish?(X) AND breaks?(X) IMPL sweep?(you, X)"
+"50	If you're lonely"," call a friend.	","lonely?(you) IMPL call?(you,friend)"
+"51	If the internet is slow"," restart the router.	",slow?(internet) IMPL restart?(router)
+"52	If you're inspired"," take action.	",inspired?(you) IMPL take_action?(you)
+"53	If I were you"," I'd take that job offer.	","as_if?(me,you) IMPL ? X (job_offer?(X) ? accept?(me,X))"
+"54	If you want to succeed"," work hard.	","want?(you,succeed) IMPL work_hard?(you)"
+"55	If you're ready"," let's begin.	","want?(you,succeed) IMPL work_hard?(you)"
+"56	If you make a mistake"," learn from it.	","FA(X) mistake?(X) AND make?(you,X) IMPL learn?(you,X)"
+"57	If you're tired"," take a nap.	",tired?(you) IMPL take_nap?(you)
+"58	If the mail arrives"," bring it in.	","FA(X) arrives?(mail,X) IMPL bring_in?(mail)"
+"59	If the sky is dark"," take an umbrella.	","dark?(sky) IMPL take?(you,umbrella)"
+"60	If we hurry"," we won't be late.	",hurry?(we) IMPL NOT late?(we)
+"61	If you're sleepy"," go to bed.	",sleepy?(you) IMPL go_to_bed?(you)
+"62	If you're thoughtful"," consider others.	","thoughtful?(you) IMPL consider?(you,others)"
+"63	If the fish smells fresh"," buy it.	",fresh?(fish) IMPL buy?(it)
+"64	If the grass is tall"," mow it.	",tall?(grass) IMPL mow?(grass)
+"65	If you're organized"," make lists.	",organized?(you) IMPL make_lists?(you)
+"66	If the snow melts"," watch for floods.	","FA(X) melts?(snow,X) IMPL watch?(floods"
+"67	If you're scared"," hold my hand.	","scared?(you) IMPL hold?(you,my_hand)"
+"68	If the car won't start"," call a mechanic.	","¬start?(car) IMPL call?(me,mechanic)"
+"69	If you're motivated"," start now.	","motivated?(you) IMPL start?(you,now)"
+"70	If the book ends"," start another.	",ends?(book) IMPL start?(another_book)
+"71	If the sunset is beautiful"," take pictures.	",beautiful?(sunset) IMPL take_pictures?(me)
+"72	If you're confident"," take the lead.	",confident?(you) IMPL take_lead?(you)
+"73	If the storm comes"," stay inside.	",comes?(storm) IMPL stay_inside?(me)
+"74	If the soup boils"," lower the heat.	",boils?(soup) IMPL lower?(heat)
+"75	If you finish first"," help others.	","FA(X) first?(X, finish) IMPL help?(X, others)"
